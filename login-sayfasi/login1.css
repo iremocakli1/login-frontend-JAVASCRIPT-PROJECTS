@@ -1,0 +1,487 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+ *, *:before, *:after {
+	 box-sizing: border-box;
+}
+
+@import url(
+    'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap'
+
+);
+ul {
+    position: absolute;
+    top: 4%;
+   left:200px;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+    margin: 0 30px;
+    transition: 0.5s;
+}
+ul li a span {
+    position: absolute;
+    transition: transform 0.5s;
+}
+ul li a span:nth-child(1),
+ul li a span:nth-child(3) {
+    width: 100%;
+    height: 0.1px;
+    background: #f7f7f7;
+    box-shadow: 0px 1px 3px 0px ;
+}
+ul li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+ul li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+ul li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+ul li a span:nth-child(2),
+ul li a span:nth-child(4) {
+    width: 3px;
+    height: 100%;
+    background: #fadddd;
+}
+ul li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+}
+ul li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+ul li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+ul li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.linkedins {
+    color: #1da1f2;
+}
+.linkedin:hover span {
+    background: #1da1f2;
+}
+.medium:hover {
+    color: greenyellow;
+}
+.medium:hover span {
+    background: greenyellow;
+}
+.github:hover {
+    color: #c32aa3;
+}
+.github:hover span {
+    background: #c32aa3;
+}
+.mail:hover {
+    color:rgb(170, 220, 231);
+}
+.mail:hover span {
+    background: rgb(170, 220, 231);
+}
+ul li a .twitter {
+    color: #1da1f2;
+}
+ul li a:hover:nth-child(3) {
+    color: #c32aa3;
+}
+ul li a:hover:nth-child(4) {
+    color: #dd4b39;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+
+}
+
+h6 {
+    text-align: center;
+
+    
+    margin: 0 0 30px;
+    font-size: 0.8em;
+   color: #636262; 
+   font-weight: 10px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.square{
+    
+    position: relative;
+    width:800px;
+    height:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+ .square i{
+    margin-top:35px ;
+     position: absolute; 
+    inset: 0;
+    border: 2px solid  #fff;
+    transition: 0.5s;
+   
+ }
+
+ .square i:nth-child(1)
+ {border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+animation: animate 6s linear infinite;
+}
+
+.square i:nth-child(2)
+{border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+animation: animate 4s linear infinite;
+}
+
+.square i:nth-child(3)
+{border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+animation: animate 10s linear infinite;
+}
+.square:hover i{
+border: 6px solid var(--clr);
+filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate
+{
+    0%{
+    transform:rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+}
+@keyframes animate2
+{
+    0%{
+    transform:rotate(360deg);
+}
+100%{
+    transform: rotate(0deg);
+}
+}
+ body {
+  height: 100vh;
+	 
+   overflow-y: hidden!important;
+	 
+}
+ a {
+	 text-decoration: none;
+	 color: #effcfd;
+	 transition: 0.5s ease;
+}
+ a:hover {
+	 color: #99e9ed;
+}
+ .form {
+	 background: transparent;
+	 padding: 30px;
+	 max-width: 600px;
+     height:380px;
+	 margin: 20px auto;
+	border: none;
+	 box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3);
+     z-index: 0;
+     
+}
+ .tab-group {
+	 list-style: none;
+	 padding: 0;
+	 margin: 0 0 0px 0;
+    text-align: justify;
+}
+ .tab-group:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+ .tab-group li a {
+	  display: block; 
+	 text-decoration: none;
+	 padding: 15px;
+	 background: rgba(239, 240, 215, 0.25);
+	 color: #a0b3b0;
+	 font-size: 20px;
+	 margin-top: 550px;
+	 width: 100;
+	 text-align: right;
+	 cursor: pointer;
+	 transition: 0.5s ease;
+     
+}
+
+ .tab-group .active a {
+	
+	 color: #fff;
+}
+ .tab-content > div:last-child {
+	 display: none;
+     background-color: transparent;
+}
+.tab-group{
+  border-radius: 0px!important;
+  margin: 10px;
+ 
+}
+
+ input, textarea {
+    font-size: 1.2em;
+    background: transparent;
+	 display: block;
+	 width: 100%;
+	 height: 100%;
+	 padding: 6px 10px;
+	 background: none;
+	 background-image: none;
+	 color: #fff;
+	 position: relative;
+	border: none;
+     box-shadow: 0px 5px 10px 0px ;
+     outline: none;
+  
+}
+ textarea {
+	 
+	 resize: vertical;
+}
+ .field-wrap {
+	 position: relative;
+	 margin-bottom:20px;
+}
+.field-wrap input:focus {
+    color: black;
+    font-size: 1.2em;
+    padding: 6px 10px;
+    background: rgb(249, 249, 250);
+    border-left: 0.1px solid #1a021f;
+    border-right: 0.1px solid #1a021f;
+    letter-spacing: 0.1em;
+  }
+
+ .top-row:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+ .top-row > div {
+	 float: left;
+	 width: 48%;
+	 margin-right: 4%;
+}
+ .top-row > div:last-child {
+	 margin: 0;
+}
+   
+    
+ .button {
+	 border: 0;
+	 outline: none;
+	 border-radius: 0px;
+	 padding: 15px 0;
+	 font-size: 20px;
+	 font-weight: 400;
+	 letter-spacing: 0.1em;
+	 
+   cursor: pointer;
+	 color: #fff;
+	 transition: all 0.5s ease;
+	  /* -webkit-appearance: none;  */
+}
+
+.button-block{
+    font-size: 0.8em;
+}
+ .button-block {
+	width: 100%;
+background: linear-gradient(45deg,#fb3b7b,#fff172);
+border: none;
+cursor: pointer;
+height: 3.2em;
+box-shadow:none ;
+margin-top: 30px;
+}
+.button-block:hover{
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+ .forgot {
+	 margin-top: -20px;
+	 text-align: right;
+}
+ 
+.login{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 19px;
+}
+
+
+
+ @keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #333;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  } 
+  
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+    --glow-color: hsl(61, 85%, 52%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ .newAccount{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 62px ;
+    font-size:x-small;
+   padding-top: 22px;
+   
+    
+}
+.newAccount a{
+    color:#bcb9b9;
+    text-decoration: none;
+    
+}
+#login .newAccount span{
+  color:#626060;
+  text-decoration: none;
+  margin-top: 6px;
+}
+
+.haveAccount{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color:#626060;
+    text-align: center;
+    font-size:x-small;
+   padding-top: 22px;
+   margin-left: 34%;
+}
+.haveAccount span{
+    padding-left: 3px;
+    color:#bcb9b9;
+  text-decoration: none;
+}
+
+.d-flex {
+    display: flex;
+    } 
+    .eye{
+     
+        padding: 0px 0px;
+        cursor: pointer;
+        color: #908a8a;
+        width: 20%;
+        padding: 6px 10px;
+        background: transparent;
+        border: 0;
+       
+        box-shadow: 1px 1px 9px 2px ;
+        outline: none;
+        float: right;
+    }
